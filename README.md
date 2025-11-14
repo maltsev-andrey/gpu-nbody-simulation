@@ -349,6 +349,4 @@ For questions, collaboration opportunities, or technical discussions about GPU c
 
 ---
 
-**⭐ If you find this project useful, please consider giving it a star!**
-
-*This project demonstrates real-world GPU programming skills with concrete, measurable performance improvements: transforming multi-hour computations into sub-second results through parallel computing.*
+**If you find this project useful, please consider giving it a star!**
