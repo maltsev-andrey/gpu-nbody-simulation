@@ -41,6 +41,14 @@ nbody_*.mp4
 output/
 results/
 
+# Exception: Allow demo and assets files
+!demo/*.mp4
+!demo/*.gif
+!assets/*.mp4
+!assets/*.gif
+!assets/*.png
+!assets/*.jpg
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
