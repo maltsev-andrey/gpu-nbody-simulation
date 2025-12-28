@@ -10,6 +10,8 @@ A GPU-accelerated N-body gravitational simulation demonstrating **13,000× speed
 
 ![N-Body Simulation Demo](assets/nbody_demo.gif)
 
+![N-Body Simulation Demo](https://github.com/maltsev-andrey/gpu-nbody-simulation/blob/main/assets/nbody_cuda.gif)
+
 ![GPU-NBody Simulation MP4 file](demo/nbody_cuda.mp4)
 
 ## Performance Highlights
