@@ -136,7 +136,7 @@ class CUDANBodySimulation:
         def __init__(self, config: SimulationConfig):
             self.config = config
             self.n_bodies = config.n_bodies
-            self.G = config.time_step
+            self.G = config.G
             self.dt = config.time_step
          
             # Initialize particel data
@@ -293,7 +293,8 @@ class CUDANBodySimulation:
             ax.set_xlabel('X')
             ax.set_ylabel('Y') 
             ax.set_zlabel('Z')
-            ax.set_title(f'CUDA N-Body Simulation ( {self.n_bodies} bodies )') 
+            # ax.set_title(f'CUDA N-Body Simulation ( {self.n_bodies} bodies )') 
+            ax.set_title(f'Численное моделирование системы из N тел ( {self.n_bodies} bodies )')
  
             # Determine plot limits
             all_positions = np.array(position_history) 
@@ -313,7 +314,7 @@ class CUDANBodySimulation:
             def update(frame):
                 positions = position_history[frame]
                 scatter._offsets3d = (positions[:, 0], positions[:, 1], positions[:, 2])
-                ax.set_title(f'CUDA N-Body Simulation | Frame {frame}/{len(position_history)}')
+                ax.set_title(f'Численное моделирование системы из N тел | Фрэйм {frame}/{len(position_history)}')
                 return scatter,
         
             anim = FuncAnimation(fig, update, frames=len(position_history),
