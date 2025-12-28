@@ -8,6 +8,7 @@
 
 A GPU-accelerated N-body gravitational simulation demonstrating **13,000× speedup** over CPU baseline through CUDA parallel computing. This project showcases GPU programming techniques using Python with Numba CUDA.
 
+
 ![N-Body Simulation Demo](assets/nbody_demo.gif)
 
 
